@@ -50,6 +50,6 @@ url={https://openreview.net/forum?id=Bk13Qfu8Ru}
 
 ## References
 
-A lot of our experiments are built on top of implementations provided by the following papers:
+Many of our experiments are built on top of implementations provided by the following papers:
 
 1. [Just Train Twice: Improving Group Robustness without Training Group Information](https://arxiv.org/pdf/2107.09044)
