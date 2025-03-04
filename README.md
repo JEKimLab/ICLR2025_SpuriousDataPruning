@@ -6,7 +6,7 @@ This repository contains the code for experiments in the ICLR 2025 Spotlight pap
 
 ## CelebA Experiments
 
-Please download and unzip the CelebA dataset from [Liu et. al. 2015](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) (Aligned and Cropped Images).
+Please download and unzip the CelebA dataset from [Liu et. al. 2015](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html) (Aligned and Cropped Images) and move it to the CelebA/data/ sub-directory.
 
 Sample Commands
 
