@@ -1,4 +1,8 @@
-# Instructions
+# Severing Spurious Correlations with Data Pruning
+
+This repository contains the code for experiments in the ICLR 2025 paper [Severing Spurious Correlations with Data Pruning](https://openreview.net/forum?id=Bk13Qfu8Ru) by Varun Mulchandani and Jung-Eun Kim.
+
+[03/04/2025] More experiments to come soon!
 
 ## CelebA Experiments
 
@@ -31,3 +35,21 @@ bash results/CelebA/CelebA_sample_exp/ERM_upweight_0_epochs_25_lr_0.001_weight_d
 
 ```
 
+Please consider citing our paper if you find this repository useful in your work.
+
+```bibtex
+@inproceedings{
+mulchandani2025severing,
+title={Severing Spurious Correlations with Data Pruning},
+author={Varun Mulchandani and Jung-Eun Kim},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=Bk13Qfu8Ru}
+}
+```
+
+## References
+
+A lot of our experiments are built on top of implementations provided by the following papers:
+
+1. [Just Train Twice: Improving Group Robustness without Training Group Information](https://arxiv.org/pdf/2107.09044)
