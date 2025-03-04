@@ -6,7 +6,7 @@ This repository contains the code for experiments in the ICLR 2025 Spotlight pap
 
 ## CelebA Experiments
 
-Please download and unzip the CelebA dataset from https://www.kaggle.com/datasets/jessicali9530/celeba-dataset and move it to the celebA/data/ directory. The original dataset from Liu et. al. can be found in this [link]([https://openreview.net/forum?id=Bk13Qfu8Ru](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html))
+Please download and unzip the CelebA dataset from https://www.kaggle.com/datasets/jessicali9530/celeba-dataset and move it to the celebA/data/ directory. The original dataset from Liu et. al. can be found in this [link](https://mmlab.ie.cuhk.edu.hk/projects/CelebA.html).
 
 Sample Commands
 
