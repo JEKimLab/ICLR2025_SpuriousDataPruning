@@ -44,7 +44,7 @@ Please consider citing our paper if you find this repository useful in your work
 mulchandani2025severing,
 title={Severing Spurious Correlations with Data Pruning},
 author={Varun Mulchandani and Jung-Eun Kim},
-booktitle={The Thirteenth International Conference on Learning Representations},
+booktitle={The Thirteenth International Conference on Learning Representations (ICLR)},
 year={2025},
 url={https://openreview.net/forum?id=Bk13Qfu8Ru}
 }
