@@ -37,6 +37,38 @@ bash results/CelebA/CelebA_sample_exp/ERM_upweight_0_epochs_25_lr_0.001_weight_d
 
 ```
 
+## CIFAR-10S Experiments
+
+Sample Commands
+
+```
+# Compute Core Feature Difficulty
+
+python3 ResNet20_main.py
+
+# Store indices for samples with hardest and easiest core features.
+
+python3 split.py
+
+# Compute Spurious Misclassifications with easy spurious feature (S3 in text).
+
+# Introduce synthetic spurious feature into samples with hard core features.
+python3 ResNet20_main_spurious_easiest.py hardest 
+
+# Introduce synthetic spurious feature into samples with easy core features.
+python3 ResNet20_main_spurious_easiest.py easiest 
+
+# Compute Spurious Misclassifications with hard spurious feature (S1 in text).
+
+# Introduce synthetic spurious feature into samples with hard core features.
+python3 ResNet20_main_spurious_hardest.py hardest 
+
+# Introduce synthetic spurious feature into samples with easy core features.
+python3 ResNet20_main_spurious_hardest.py easiest 
+
+```
+
+
 Please consider citing our paper if you find this repository useful in your work.
 
 ```bibtex

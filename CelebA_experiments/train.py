@@ -134,7 +134,8 @@ def run_epoch(
                     wandb_stats["batch_idx"] = batch_idx
                     wandb.log(wandb_stats)
 
-        if epoch == 9 and is_training:
+        # Used in the original code
+        '''if epoch == 9 and is_training:
             all_ = []
             model.eval()
             for batch_idx, batch in enumerate(prog_bar_loader):
@@ -146,6 +147,29 @@ def run_epoch(
                 for j in range(len(y)):
                     image = x[j].unsqueeze(0)
                     output = model(image)[0]
+                    prob = F.softmax(output, dim=0).detach()
+                    label = y[j].item()
+                    curr_index = data_idx[j].item()
+                    vector = torch.tensor([0, 0]).cuda()
+                    vector[label] = 1
+                    el2n = torch.norm(vector - prob)
+                    all_.append([curr_index, el2n, label])
+            with open(str(epoch) + 'el2n.pkl', 'wb') as f:
+                pickle.dump(all_, f)
+            model.train()'''
+        # Batched - more efficient but not used in the original code.
+        if epoch == 9 and is_training:
+            all_ = []
+            model.eval()
+            for batch_idx, batch in enumerate(prog_bar_loader):
+                batch = tuple(t.to(device) for t in batch)
+                x = batch[0]
+                y = batch[1]
+                g = batch[2]
+                data_idx = batch[3]
+                outputs = model(x)
+                for j in range(len(y)):
+                    output = outputs[j]
                     prob = F.softmax(output, dim=0).detach()
                     label = y[j].item()
                     curr_index = data_idx[j].item()
