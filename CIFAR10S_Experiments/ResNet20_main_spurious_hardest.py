@@ -333,10 +333,10 @@ if training_required:
 
       print('Testing Accuracy: ', testing_acc/len(test_loader.dataset))
 
-  torch.save(model, 'ResNet20_best_easiest.pt')
+  torch.save(model, 'ResNet20_best_hardest.pt')
   print('Test Accuracy:', end = ' ')
 
-  to_test = torch.load('ResNet20_best_easiest.pt')
+  to_test = torch.load('ResNet20_best_hardest.pt')
 
   testing_acc = 0.
   d = defaultdict(int)
