@@ -2,7 +2,7 @@
 
 This repository contains the code for experiments in the ICLR 2025 Spotlight paper [Severing Spurious Correlations with Data Pruning](https://openreview.net/forum?id=Bk13Qfu8Ru) by Varun Mulchandani and Jung-Eun Kim.
 
-[03/04/2025] More experiments to come soon!
+More experiments to come soon!
 
 ## CelebA Experiments
 
