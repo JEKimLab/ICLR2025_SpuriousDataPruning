@@ -73,7 +73,7 @@ Please consider citing our paper if you find this repository useful in your work
 
 ```bibtex
 @inproceedings{
-mulchandani2025severing,
+mulchandani2025ICLR,
 title={Severing Spurious Correlations with Data Pruning},
 author={Varun Mulchandani and Jung-Eun Kim},
 booktitle={The Thirteenth International Conference on Learning Representations (ICLR)},
